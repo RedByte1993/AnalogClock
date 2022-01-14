@@ -23,9 +23,9 @@ namespace AnalogClock.Classes
         {
             startPoint = new PointF((float)(Surface.Width / 2.0), (float)(Surface.Height / 2.0));
             graphics = Surface.CreateGraphics();
-            secondClockHand = new ClockHands(2, 100.0, ClockHandType.SECOND, startPoint, graphics);
-            minuteClockHand = new ClockHands(5, 100.0, ClockHandType.MINUTE, startPoint, graphics);
-            hourClockHand = new ClockHands(8, 50.0, ClockHandType.HOUR, startPoint, graphics);
+            secondClockHand = new ClockHands(2, 200.0, ClockHandType.SECOND, startPoint, graphics);
+            minuteClockHand = new ClockHands(5, 200.0, ClockHandType.MINUTE, startPoint, graphics);
+            hourClockHand = new ClockHands(8, 150.0, ClockHandType.HOUR, startPoint, graphics);
             Surface.Paint += Surface_Paint;
             timer = new System.Windows.Forms.Timer();
             timer.Interval = 10;
@@ -58,7 +58,7 @@ namespace AnalogClock.Classes
         {
             PointF[] points = new PointF[12];
             startPoint = new PointF(surface.Width / 2.0f, surface.Height / 2.0f);
-            double lenght = 150;
+            double lenght = 250;
             double angle = 0;
             PolarCoordinates polarCoordinates;
             Vector vector;

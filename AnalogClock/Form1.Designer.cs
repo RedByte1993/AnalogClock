@@ -1,6 +1,6 @@
 ﻿namespace AnalogClock
 {
-    partial class Form1
+    partial class AnalogClock
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -28,13 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Surface = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // Surface
+            // 
+            this.Surface.BackColor = System.Drawing.Color.LightGray;
+            this.Surface.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Surface.Location = new System.Drawing.Point(0, 0);
+            this.Surface.Name = "Surface";
+            this.Surface.Size = new System.Drawing.Size(978, 944);
+            this.Surface.TabIndex = 0;
+            // 
+            // AnalogClock
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(978, 944);
+            this.Controls.Add(this.Surface);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1000, 1000);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1000, 1000);
+            this.Name = "AnalogClock";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AnalogClock";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel Surface;
     }
 }
 
